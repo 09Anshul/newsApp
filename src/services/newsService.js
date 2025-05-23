@@ -62,7 +62,7 @@ export const fetchAndSaveAll = async (category) => {
     }
   }
 
-  await prisma.news.createMany({
+  await prisma.news_9kwf.createMany({
     data: uniqueArticles.map(item => ({
       title: item.title,
       description: item.description,
