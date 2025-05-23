@@ -11,7 +11,7 @@ export const getDataByCategory = async (req, res) => {
   const { category } = req.params;
   const limit = parseInt(req.query.limit) || 50;
 
-  const data = await prisma.news.findMany({
+  const data = await prisma.news_9kwf.findMany({
     where: { category },
     orderBy: { publishedAt: 'desc' },
     take: limit,
